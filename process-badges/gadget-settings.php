@@ -22,21 +22,21 @@ $version = "0.5.0";
 
 /*issuer url - REQUIRED. This is the domain name of the site that will be issuing the badges. It should be the domain where you're installing the OpenBadgifier.*/
 
-$issuer_url = "http://yourdomain.com";
+$issuer_url = "http://play.strangerpixel.com";
 
 /*root path - REQUIRED. CHMOD 775. This is the root path of where your process-badges directory is hosted. You SHOULD password protect this directory with something like .htaccess so that the public can't issue badges on your behalf. */
 
 /*NOTE: your server may require the path to be: $root_path = $_SERVER['DOCUMENT_ROOT']."/badge-it-gadget-lite/process-badges/"; (Notice forward slash before "badge-it-gadget-lite" */
 
-$root_path = $_SERVER['DOCUMENT_ROOT']."badge-it-gadget-lite/process-badges/";
+$root_path = $_SERVER['DOCUMENT_ROOT']."/badge-it-gadget-lite/process-badges/";
 
 /* issuer name  - REQUIRED. name of organization or person that is issuing the badges. */
 
-$issuer_name = ""; //This appears on the badge
+$issuer_name = "Alastair Mucklow"; //This appears on the badge
 
 /*issuer org - OPTIONAL. Organization for which the badge is being issued. Another example is if a scout badge is being issued, the "name" could be "Boy Scouts" and the "org" could be "Troop #218". */
 
-$issuer_org = "";
+$issuer_org = "strangerpixel";
 
 /* issuer contact - REQUIRED. A human-monitored email address associated with the issuer. */
 
@@ -46,7 +46,7 @@ $issuer_contact = "";
 
 /*NOTE: your server may require the path to be: $json_dir = $_SERVER['DOCUMENT_ROOT']."/badge-it-gadget-lite/digital-badges/issued/json/"; (Notice forward slash before "badge-it-gadget-lite" */
 
-$json_dir = $_SERVER['DOCUMENT_ROOT']."badge-it-gadget-lite/digital-badges/issued/json/";
+$json_dir = $_SERVER['DOCUMENT_ROOT']."/badge-it-gadget-lite/digital-badges/issued/json/";
 
 /* badge images directory - REQUIRED. Set the path to the directory where your badge images are stored. They should be stored on the same domain as OpenBadifier since the images should be on the issuing site. Don't have badge images yet? You can mae some here (note: they must be PNG) - http://www.onlineiconmaker.com/application/ */
 
@@ -79,8 +79,8 @@ $badges_array = array(
 	"criteria_url" => "/badge-it-gadget-lite/digital-badges/badge-it-gadget-lite-badge-criteria.html",
 	"expires" => "2014-02-02"), //notice close parenthesis and comma
 	2 => array(
-	"name" => "Another Badge", 
-	"image" => "example.png", 
-	"description" => "This is an example of another badge", 
-	"criteria_url" => "/digital-badges/example-badge-not-real.html") //if you were to add a # 3 you'd want a comma here too.
+	"name" => "Build Fridays Badge", 
+	"image" => "build-fridays.png", 
+	"description" => "Earner has committed code on a Friday", 
+	"criteria_url" => "/badge-it-gadget-lite/digital-badges/build-fridays-badge-criteria.html") //if you were to add a # 3 you'd want a comma here too.
 	);

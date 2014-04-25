@@ -1,3 +1,6 @@
+See live example at http://play.strangerpixel.com/badge-it-gadget-lite/process-badges/
+
+
 Badge-It Gadget Lite
 ====================
 
